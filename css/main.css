@@ -1,7 +1,7 @@
 /*---
 Global styles --*/
 
-html {font-size: 0.75em;}
+html { font-size: 0.75em; }
 
 body {
   color: #FF6721;
@@ -14,11 +14,11 @@ body {
 }
 
 section {
-  margin-bottom: 20vw;
+  margin-bottom: 10vw;
 }
 
 .container {
-  max-width: 1000px ;
+  max-width: 900px ;
   padding: 0vw 10vw 0vw 10vw;
 }
 
@@ -43,10 +43,31 @@ h5 { font-size: 1.214em; letter-spacing: .1em; }
 
 small, .font_small {font-size: 0.707em;}
 
-p { margin-bottom: 3.3em; }
+p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em; }
 
 .classy {
-  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 1.8em; line-height: 1.9em; font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+.button {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button.black {
+  background-color: #4A4A4A;
+  color: white;
+  font-weight: 300; font-size: 1em; letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.button.black:hover {
+  background-color: #2B2B2B;
 }
 
 
@@ -57,28 +78,46 @@ intro --*/
   text-align: center;
 }
 
-
 .learning-crest {
   width: 250px;
   height: 250px;
   display: block;
   margin-top: 10vw;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
   margin: 0 auto;
 }
 
 .learning-crest img {
-  margin: 10vw 0vw 10vw 0vw;
+  margin: 5vw 0vw 5vw 0vw;
   display: block;
 }
 
 .intro h1 {
 	background: url(../img/fieldDay-logo.png) no-repeat center;
   background-size: contain;
-	width: 60vw;
-	height: 40vw;
-	margin: 0 auto;
+	width: 100%;
+	height: 15vw;
   text-indent: -9999px;
+  margin: 5vw 0vw 5vw 0vw;
+}
+
+.call-out {
+  background: #F6F6F3;
+  padding: 5vw 0vw;
+  margin: 4vw 0vw 5vw 0vw;
+  color: #4A4A4A;
+}
+
+.call-out p {
+  margin-bottom: 2em;
+}
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2.5vw;
 }
 
 /*---
