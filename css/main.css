@@ -1,23 +1,99 @@
+/*---
+Global styles --*/
 
+html {font-size: 0.75em;}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-.body {
-	color: #FF6721;
-	background: url(../img/background-icons.png) repeat;
-	background-size: 1250px 665px;
+body {
+  color: #FF6721;
+  background: url(../img/background-icons.png) repeat;
+  background-size: 1250px 665px;
+  background-attachment:fixed;
+  font-family: 'Open Sans', 'futura', 'helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
 }
 
-.jumbotron h1 {
+section {
+  margin-bottom: 20vw;
+}
+
+.container {
+  max-width: 1000px ;
+  padding: 0vw 10vw 0vw 10vw;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1.414em 0 1.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing:.2em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 { font-size: 2.827em; }
+h3 { font-size: 1.999em; }
+h4 { font-size: 1.414em; }
+h5 { font-size: 1.214em; letter-spacing: .1em; }
+
+small, .font_small {font-size: 0.707em;}
+
+p { margin-bottom: 3.3em; }
+
+.classy {
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+
+/*---
+intro --*/
+
+.intro {
+  text-align: center;
+}
+
+
+.learning-crest {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  margin: 0 auto;
+}
+
+.learning-crest img {
+  margin: 10vw 0vw 10vw 0vw;
+  display: block;
+}
+
+.intro h1 {
 	background: url(../img/fieldDay-logo.png) no-repeat center;
-	width: 80vw;
-	height: auto;
+  background-size: contain;
+	width: 60vw;
+	height: 40vw;
 	margin: 0 auto;
+  text-indent: -9999px;
 }
 
+/*---
+Footer styles --*/
 
+footer {
+  color: #fff;
+  background: #FF6721;
+  padding: 10vw;
+}
+
+/*---
+Utility styles --*/
+
+.centered { text-align: center; }
 
 
 
