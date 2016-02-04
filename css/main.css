@@ -129,6 +129,56 @@ footer {
   padding: 10vw;
 }
 
+footer .container {
+  max-width: 700px;
+}
+
+.social-media {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5vw;
+}
+
+.social-media a {
+  width: 50px;
+  height: 50px;
+  background:url(../img/social-sprite.png) no-repeat;
+  background-size: 200px 100px;
+  display: inline-block;
+  margin: 10px;
+  transition: .1s all ease-in-out;
+}
+
+a.facebook:hover {
+  background-position: 0px -50px;
+}
+
+a.twitter {
+  background-position: -50px 0px;
+}
+
+a.twitter:hover {
+  background-position: -50px -50px;
+}
+
+a.instagram {
+  background-position: -100px 0px;
+}
+
+a.instagram:hover {
+  background-position: -100px -50px;
+}
+
+a.medium {
+  background-position: -150px 0px;
+}
+
+a.medium:hover {
+  background-position: -150px -50px;
+}
+
+
 /*---
 Utility styles --*/
 
