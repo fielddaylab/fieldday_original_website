@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5 {
   letter-spacing:.2em;
 }
 
+a {
+  color: #FF6721;
+  text-decoration: underline;
+}
+
 h1 {
   margin-top: 0;
   font-size: 3.998em;
@@ -120,6 +125,64 @@ intro --*/
   margin-bottom: 2.5vw;
 }
 
+#get_involved .container {
+  max-width: 1700px;
+}
+
+#get_involved .col {
+  padding: 0px 60px;
+  text-align: center;
+  height: 40vw;
+  transition: all .2s ease-in-out;
+}
+
+#get_involved .col:hover {
+  transform: scale(1.1);
+}
+
+#get_involved .section-header {
+  margin-bottom: 5vw;
+}
+
+.divider {
+  border-left: 2px solid #efefef;
+  height: 70%;
+  left: 0;
+  top: 15%;
+  float:left;
+}
+
+.info-chunk {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: all .2s ease-in-out;
+}
+
+#get_involved .col:hover .info-chunk {
+  color: #2E31E5;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #FF6721;
+  border-radius:100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all .3s ease-in-out;
+}
+
+#get_involved .col:hover .info-chunk .circle {
+  background-color: #2E31E5;
+  border-radius:0px;
+  transform: rotate(315deg);
+}
+
 /*---
 Footer styles --*/
 
@@ -138,6 +201,7 @@ footer .container {
   margin: 0 auto;
   text-align: center;
   margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .social-media a {
@@ -176,6 +240,12 @@ a.medium {
 
 a.medium:hover {
   background-position: -150px -50px;
+}
+
+.fd_flag {
+  width: 150px;
+  height: 93px;
+  margin: 0 auto;
 }
 
 
