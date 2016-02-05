@@ -18,17 +18,7 @@ section {
 }
 
 .container {
-  max-width: 900px ;
-  padding: 0vw 10vw 0vw 10vw;
-}
-
-h1, h2, h3, h4, h5 {
-  margin: 1.414em 0 1.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing:.2em;
+  max-width: 800px ;
 }
 
 a {
@@ -46,6 +36,15 @@ h3 { font-size: 1.999em; }
 h4 { font-size: 1.414em; }
 h5 { font-size: 1.214em; letter-spacing: .1em; }
 
+h1, h2, h3, h4, h5 {
+  margin: 1.414em 0 1.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing:.2em;
+}
+
 small, .font_small {font-size: 0.707em;}
 
 p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em; }
@@ -55,18 +54,27 @@ p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em
 }
 
 .button {
-  padding: 10px;
+  padding: 15px;
   display: inline-block;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .button:hover {
   text-decoration: none;
+  transform: scale(1.05);
 }
 
 .button.black {
   background-color: #4A4A4A;
-  color: white;
+  color: #fff;
+  font-weight: 300; font-size: 1em; letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.button.white {
+  background-color: rgba(255,255,255,1);
+  color: #2B2B2B;
   font-weight: 300; font-size: 1em; letter-spacing: .2em;
   text-transform: uppercase;
 }
@@ -75,12 +83,12 @@ p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em
   background-color: #2B2B2B;
 }
 
-
 /*---
 intro --*/
 
 .intro {
   text-align: center;
+  position:relative;
 }
 
 .learning-crest {
@@ -100,10 +108,33 @@ intro --*/
 .intro h1 {
 	background: url(../img/fieldDay-logo.png) no-repeat center;
   background-size: contain;
-	width: 100%;
-	height: 15vw;
+	width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
   text-indent: -9999px;
-  margin: 5vw 0vw 5vw 0vw;
+}
+
+.mapbg{
+  width: 30%;
+  position: absolute;
+  bottom:0;
+  display: block;
+  z-index:100;
+}
+
+.map-left {
+  left:0vw;
+  background:url(../img/map-left.png) no-repeat;
+  background-size: cover;
+}
+
+.map-right {
+  right:-10vw;
+  background:url(../img/map-right.png) no-repeat;
+  background-size: 750px 1150px;
 }
 
 .call-out {
@@ -111,6 +142,9 @@ intro --*/
   padding: 5vw 0vw;
   margin: 4vw 0vw 5vw 0vw;
   color: #4A4A4A;
+  text-align: center;
+  position: relative;
+  z-index: 1000;
 }
 
 .call-out p {
@@ -132,7 +166,7 @@ intro --*/
 #get_involved .col {
   padding: 0px 60px;
   text-align: center;
-  height: 40vw;
+  height: 400px;
   transition: all .2s ease-in-out;
 }
 
@@ -150,15 +184,6 @@ intro --*/
   left: 0;
   top: 15%;
   float:left;
-}
-
-.info-chunk {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transition: all .2s ease-in-out;
 }
 
 #get_involved .col:hover .info-chunk {
@@ -197,11 +222,10 @@ footer .container {
 }
 
 .social-media {
-  width: 400px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .social-media a {
@@ -246,6 +270,8 @@ a.medium:hover {
   width: 150px;
   height: 93px;
   margin: 0 auto;
+  display: block;
+  margin-top: 40px;
 }
 
 
@@ -254,10 +280,43 @@ Utility styles --*/
 
 .centered { text-align: center; }
 
+@media (max-width: 991px) {
+  #get_involved .col {
+    height: 500px;
+    padding: 20px 30px;
+  }
+}
 
+@media (min-width: 768px) {
+  .info-chunk {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: all .2s ease-in-out;
+  }
+}
 
+@media (max-width: 767px) {
+  #get_involved .col {
+    height: auto;
+  }
 
+  h2 { font-size: 2.2em; }
+  h3 { font-size: 1.4em; }
+  h4 { font-size: 1em; }
+  h5 { font-size: .9em; letter-spacing: .1em; }
 
+  .call-out {
+    padding: 10vw 0vw;
+  }
+
+  .classy {
+    font-size: 1.4em;
+  }
+
+}
 
 
 
