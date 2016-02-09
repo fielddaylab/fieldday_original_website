@@ -58,6 +58,7 @@ p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em
   display: inline-block;
   margin: 0 auto;
   text-decoration: none;
+  transition: all .2s ease-in-out;
 }
 
 .button:hover {
@@ -75,6 +76,13 @@ p { font-weight: 200; font-size: 1.2em; margin-bottom: 1.5em; line-height: 1.8em
 .button.white {
   background-color: rgba(255,255,255,1);
   color: #2B2B2B;
+  font-weight: 300; font-size: 1em; letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.button.orange {
+  background-color: #FF6721;
+  color: #fff;
   font-weight: 300; font-size: 1em; letter-spacing: .2em;
   text-transform: uppercase;
 }
@@ -164,7 +172,7 @@ intro --*/
 }
 
 #get_involved .col {
-  padding: 0px 60px;
+  padding: 40px 60px;
   text-align: center;
   height: 400px;
   transition: all .2s ease-in-out;
@@ -188,6 +196,10 @@ intro --*/
 
 #get_involved .col:hover .info-chunk {
   color: #2E31E5;
+}
+
+#get_involved .col:hover .button {
+  background-color: #2E31E5;
 }
 
 .circle {
