@@ -12,4 +12,9 @@ $(function() {
       }
     }
   });
+
+  $('.call-out-btn').hover(function () {
+    $('.call-out').toggleClass('focused');
+  });
+
 });

@@ -146,13 +146,28 @@ intro --*/
 }
 
 .call-out {
-  background: #F6F6F3;
+  background:url(../img/fd-teacherbg.jpg) no-repeat;
+  background-size: 100% auto;
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
   padding: 5vw 0vw;
-  margin: 4vw 0vw 5vw 0vw;
+  margin: 4vw 0vw 13vw 0vw;
   color: #4A4A4A;
   text-align: center;
   position: relative;
   z-index: 1000;
+  transition: all .6s ease-in-out;
+  background-position:center;
+}
+
+.call-out a {
+  margin: 15vw;
+}
+
+.call-out.focused {
+  -webkit-filter: grayscale(0%);
+  filter: none;
 }
 
 .call-out p {
@@ -218,6 +233,13 @@ intro --*/
   background-color: #2E31E5;
   border-radius:0px;
   transform: rotate(315deg);
+}
+
+#tools {
+  background: #efefef;
+  height: 30vw;
+  display: block;
+  width: 100%;
 }
 
 /*---
@@ -326,6 +348,15 @@ Utility styles --*/
 
   .classy {
     font-size: 1.4em;
+  }
+
+  .learning-crest  {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intro h1 {
+    height: 100px;
   }
 
 }
