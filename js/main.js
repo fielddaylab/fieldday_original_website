@@ -17,4 +17,9 @@ $(function() {
     $('.call-out').toggleClass('focused');
   });
 
+  $('.article-link').hover(function () {
+    $( this ).parents(".article-chunk").toggleClass('focused');
+  });
+
 });
+var parentTag = $( this ).parent().get( 0 ).tagName;
