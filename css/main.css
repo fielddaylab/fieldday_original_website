@@ -406,6 +406,26 @@ a.medium:hover {
   margin-top: 40px;
 }
 
+.footer-logos {
+  text-align: center;
+  width: 100%;
+  background: #EA5013;
+  padding: 30px;
+}
+
+.footer-logos ul {
+  padding-left:0px;
+}
+
+.footer-logos li {
+  display: inline;
+  bullet-style: none;
+  padding: 20px;
+}
+
+.footer-logos img {
+  width: 120px;
+}
 
 /*---
 Utility styles --*/
@@ -470,6 +490,14 @@ Utility styles --*/
   .intro h1 {
     height: 100px;
   }
+
+  .footer-logos {
+    padding: 15px 10px 15px 10px;
+  }
+
+  .footer-logos img {
+  width: 70px;
+}
 
 }
 
