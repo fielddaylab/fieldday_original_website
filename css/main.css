@@ -70,6 +70,8 @@ p {
   margin: 0 auto;
   text-decoration: none;
   transition: all .2s ease-in-out;
+  font-weight: 300; font-size: 1em; letter-spacing: .2em;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -80,26 +82,45 @@ p {
 .button.black {
   background-color: #4A4A4A;
   color: #fff;
-  font-weight: 300; font-size: 1em; letter-spacing: .2em;
   text-transform: uppercase;
 }
 
 .button.white {
   background-color: rgba(255,255,255,1);
   color: #2B2B2B;
-  font-weight: 300; font-size: 1em; letter-spacing: .2em;
-  text-transform: uppercase;
 }
 
 .button.orange {
   background-color: #FF6721;
   color: #fff;
-  font-weight: 300; font-size: 1em; letter-spacing: .2em;
-  text-transform: uppercase;
 }
 
 .button.black:hover {
   background-color: #2B2B2B;
+}
+
+.button.blue {
+  background-color: #2E31E5;
+  color: #fff;
+}
+
+.button.arrow {
+  color: #2E31E5;
+}
+
+.button.arrow::after {
+  content:"";
+  background:url(../img/fd-icons_sprite.png) no-repeat;
+  background-size: 400px 200px;
+  background-position: -300px 0px;
+  width: 100px;
+  height:50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button.arrow:hover {
+  background-color: transparent;
 }
 
 /*---
@@ -193,16 +214,50 @@ intro --*/
   margin-bottom: 2.5vw;
 }
 
+#get_involved {
+  color: #2E31E5;
+}
+
+#get_involved .icon {
+  background:url(../img/fd-icons_sprite.png) no-repeat;
+  background-size: 400px 200px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  background-position: 0px -100px;
+}
+
+#get_involved .icon2 {
+  background-position: -100px -100px;
+}
+
+#get_involved .icon3 {
+  background-position: -200px -100px;
+}
+
+#get_involved .info-chunk-wrapper {
+  padding: 5vw 5vw 5vw 5vw;
+}
+
 #get_involved .info-chunk {
   padding: 0px 60px;
   text-align: center;
   transition: all .2s ease-in-out;
   max-width:800px;
   margin: 0 auto;
+  border-top: 3px solid;
 }
 
 #get_involved .info-chunk:hover {
   top: 52%;
+}
+
+
+#get_involved .info-chunk:hover {
+  color: #2E31E5;
 }
 
 .info-chunk h5 {
@@ -211,22 +266,6 @@ intro --*/
 
 .info-chunk p {
   font-size: 1.1em;
-}
-
-.divider {
-  border-left: 2px solid #efefef;
-  height: 70%;
-  left: 0;
-  top: 15%;
-  float:left;
-}
-
-#get_involved .info-chunk:hover {
-  color: #2E31E5;
-}
-
-#get_involved .info-chunk:hover .button {
-  background-color: #2E31E5;
 }
 
 .circle {
@@ -281,11 +320,6 @@ intro --*/
 
 .tool-logo.three {
   background-position: -200px 0px;
-}
-
-.info-chunk-wrapper {
-  height:100%;
-  background: #F6F6F3;
 }
 
 .cta-pair {
@@ -406,6 +440,26 @@ a.medium:hover {
   margin-top: 40px;
 }
 
+.footer-logos {
+  text-align: center;
+  width: 100%;
+  background: #EA5013;
+  padding: 3vw 0vw;
+}
+
+.footer-logos ul {
+  padding-left:0px;
+}
+
+.footer-logos li {
+  display: inline;
+  bullet-style: none;
+  padding: 20px;
+}
+
+.footer-logos img {
+  width: 120px;
+}
 
 /*---
 Utility styles --*/
@@ -435,17 +489,6 @@ Utility styles --*/
   }
 }
 
-@media (min-width: 992px) {
-  .info-chunk, .article-chunk a {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-}
-
 @media (max-width: 767px) {
 
 
@@ -470,6 +513,14 @@ Utility styles --*/
   .intro h1 {
     height: 100px;
   }
+
+  .footer-logos {
+    padding: 15px 10px 15px 10px;
+  }
+
+  .footer-logos img {
+  width: 70px;
+}
 
 }
 
