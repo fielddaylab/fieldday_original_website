@@ -239,11 +239,11 @@ intro --*/
 }
 
 #get_involved .info-chunk-wrapper {
-  padding: 5vw 5vw 5vw 5vw;
+  padding: 3vw;
 }
 
 #get_involved .info-chunk {
-  padding: 0px 60px;
+  padding: 0px 40px;
   text-align: center;
   transition: all .2s ease-in-out;
   max-width:800px;
@@ -277,11 +277,6 @@ intro --*/
   display: block;
   margin-bottom: 20px;
   transition: all .3s ease-in-out;
-}
-
-#get_involved .article-chunk a:hover .circle {
-  border-radius:0px;
-  transform: rotate(315deg);
 }
 
 #tools {
